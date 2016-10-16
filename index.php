@@ -11,7 +11,7 @@
 <?php
   if ($handle = opendir('.')) {
     while (false !== ($file = readdir($handle))) {
-      if ($file != "." && $file != ".." && $file != "index.php" && $file != "repo" && $file != ".index.php.swp" && $file != "images" && $file != "Packages") {
+      if ($file != "." && $file != ".." && $file != "README.md" && $file != ".git" && $file != "index.php" && $file != "repo" && $file != ".index.php.swp" && $file != "images" && $file != "Packages") {
         $thelist .= '<li><a href="'.$file.'" target="_blank"><font color="#fff">'.$file.'</font></a></li>';
       }
     }
